@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" integrity="sha512-UJfAaOlIRtdR+0P6C3KUoTDAxVTuy3lnSXLyLKlHYJlcSU8Juge/mjeaxDNMlw9LgeIotgz5FP8eUQPhX1q10A==" crossorigin="anonymous" />
+    <title>SecretsTunnel</title>
+    <style>
+        .copied, .validation{
+            margin-left:0.3em;
+        }
+        .validation{
+            color:tomato;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper  teal lighten-1">
+          <a href="#" class="brand-logo">SecretsTunnel</a>
+          <ul id="nav-mobile" class="right ">
+              <li><a target="_blank" href="https://abg12portfolio.web.app/">Portfolio</a></li>
+              <li><a target="_blank" href="https://www.linkedin.com/in/abdelkader-guendouz-490818187/">Linkedin</a></li>
+          </ul>
+        </div>
+      </nav>
+    <div class="row hide" id="show">
+        <div class="col s8 offset-s2">
+            <div class="card-panel">
+                
+            </div>
+        </div>
+    </div>
+    <div class="row" id="create">
+        <div class="col s8 offset-s2">
+            <div class="card-panel">
+                <form>
+                    <label>Enter your secret message here</label>
+                    <input type="text" />
+                    <button class="btn">Create</button><span class="validation"></span>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="row hide" id="link">
+        <div class="col s8 offset-s2">
+            <div class="card-panel">
+                    <label>Share your secret message with a friend</label>
+                    <input type="text" id="secret-msg"/>
+                    <button class="btn">Copy</button><span class="copied"></span>
+            </div>
+        </div>
+    </div>
+    <div class="row" >
+        <div class="col s8 offset-s2">
+            <p style="text-align:center">
+                See the project on <a href="#" target="_blank">Github</a>
+            </p>
+        </div>
+    </div>
+    <script src="util.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
